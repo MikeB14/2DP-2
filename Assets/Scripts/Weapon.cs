@@ -13,6 +13,7 @@ public class Weapon : MonoBehaviour {
 	
 	float timeToFire = 0;
 	Transform firePoint;
+    public Transform Bullet;
 
 	// Use this for initialization
 	void Awake () {
@@ -47,10 +48,15 @@ public class Weapon : MonoBehaviour {
 		Vector2 mousePosition = new Vector2 (Camera.main.ScreenToWorldPoint (Input.mousePosition).x, Camera.main.ScreenToWorldPoint(Input.mousePosition).y);
 		Vector2 firePointPosition = new Vector2 (firePoint.position.x, firePoint.position.y);
 		RaycastHit2D hit = Physics2D.Raycast (firePointPosition, mousePosition-firePointPosition, 100, whatToHit);
+        Effect();
 		Debug.DrawLine (firePointPosition, (mousePosition-firePointPosition)*100, Color.cyan);
 		if (hit.collider != null) {
 			Debug.DrawLine (firePointPosition, hit.point, Color.red);
 			Debug.Log ("We hit " + hit.collider.name + " and did " + Damage + " damage.");
 		}
 	}
+
+    void Effect (){
+        Instantiate(Bullet, firePoint.position, firePoint.rotation);
+    }
 }
