@@ -12,14 +12,17 @@ public class Weapon : MonoBehaviour {
 	public LayerMask whatToHit;
 	
 	float timeToFire = 0;
-	Transform firePoint;
+	public Transform firePoint;
     public Transform Bullet;
+	public Transform Laser;
+	public Transform LaserPoint;
+
 
 	// Use this for initialization
 	void Awake () {
 		firePoint = transform.Find ("FirePoint");
 		if (firePoint == null) {
-			Debug.LogError ("No firePoint? WHAT?!");
+//			Debug.LogError ("No firePoint? WHAT?!");
 		}
 	}
 	
@@ -58,5 +61,6 @@ public class Weapon : MonoBehaviour {
 
     void Effect (){
         Instantiate(Bullet, firePoint.position, firePoint.rotation);
+		Instantiate(Laser, LaserPoint.position, LaserPoint.rotation);
     }
 }
