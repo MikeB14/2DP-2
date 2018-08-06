@@ -363,8 +363,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967035
   firePoint: {fileID: 4070910428110932}
-  Bullet: {fileID: 4817158668871372, guid: ccc1fcbe82e36cd499ba7f5d396a42ba, type: 2}
-  Laser: {fileID: 4177275309975174, guid: ebd207604fbc4294e95772b0b5053550, type: 2}
+  Bullet: {fileID: 4257722757798648, guid: f269210e3683efb42ab46b1d1bd28d2b, type: 2}
+  Laser: {fileID: 4036536460318058, guid: a3e4ae9fa0eb38c4aaf14c00171dc707, type: 2}
   LaserPoint: {fileID: 4106382500854084}
 --- !u!114 &114303143746977434
 MonoBehaviour:
