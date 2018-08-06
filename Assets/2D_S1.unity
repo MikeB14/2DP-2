@@ -339,6 +339,7 @@ GameObject:
   - component: {fileID: 404568340}
   - component: {fileID: 404568339}
   - component: {fileID: 404568344}
+  - component: {fileID: 404568345}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -438,6 +439,24 @@ MonoBehaviour:
   lookAheadFactor: 0
   lookAheadReturnSpeed: 0.5
   lookAheadMoveThreshold: 0.5
+--- !u!95 &404568345
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 404568338}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 065730a5c17e1d34a8dce848bfb2f015, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &555310394
 GameObject:
   m_ObjectHideFlags: 0
@@ -585,11 +604,6 @@ Prefab:
     - target: {fileID: 4403635217415284, guid: 62684e43fbafb487a9f9b67f5cea47a1, type: 2}
       propertyPath: m_RootOrder
       value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114619387047056518, guid: 62684e43fbafb487a9f9b67f5cea47a1,
-        type: 2}
-      propertyPath: Speed
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62684e43fbafb487a9f9b67f5cea47a1, type: 2}
