@@ -16,12 +16,12 @@ public class CameraShake : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		Shake();
 	}
 
 	void Shake(){
 		if(CrossPlatformInputManager.GetButtonDown("Fire1") && ShakeCount == 0){
-		Anim.SetTrigger("CameraShake1");
+		Anim.Play("CameraShake1");
 	}
 	else if(CrossPlatformInputManager.GetButtonDown("Fire1") && ShakeCount == 1){
 		Anim.Play("CameraShake2");
