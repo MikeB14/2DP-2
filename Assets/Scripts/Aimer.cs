@@ -26,4 +26,6 @@ public class Aimer : MonoBehaviour {
     {
         RB.MovePosition(RB.position + MoveVelocity * Time.fixedDeltaTime);
     }
+
+    
 }
