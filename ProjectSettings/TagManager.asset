@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Laser
   layers:
   - Default
   - TransparentFX
@@ -47,14 +48,14 @@ TagManager:
   - name: Mountains
     uniqueID: 793231295
     locked: 0
+  - name: Forground
+    uniqueID: 1131391325
+    locked: 0
   - name: Towers
     uniqueID: 815446183
     locked: 0
   - name: Player
     uniqueID: 4288036821
-    locked: 0
-  - name: Forground
-    uniqueID: 1131391325
     locked: 0
   - name: Bullet & Aimer
     uniqueID: 4144820541
