@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class JoyRotate : MonoBehaviour {
 
-
+    public float Speed;
 
 	// Use this for initialization
 	void Start () {
@@ -16,8 +16,10 @@ public class JoyRotate : MonoBehaviour {
 	void FixedUpdate () {
 
 
-        Vector2 lookvec = new Vector2(CrossPlatformInputManager.GetAxis("Horizontal2"), CrossPlatformInputManager.GetAxis("Vertical2"));
-        transform.LookAt(transform.position.toVector2() + lookvec);
-		
-	}
+        Vector2 Direction = new Vector2(Input.GetAxis("AimHorizontal"), Input.GetAxis("AimVertical")) * Speed;
+        transform.right = Direction;
+        transform.rotation = transform.rotation;
+
+
+    }
 }
